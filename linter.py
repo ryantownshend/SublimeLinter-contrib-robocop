@@ -6,7 +6,8 @@ class Robocop(PythonLinter):
     """Robocop linter."""
 
     cmd = 'robocop'
-    regex = r'(.*)\:(\d+)\:(\d+) \[(W|I|E)\] (\d+) (.*)'
+    # regex = r'(.*)\:(\d+)\:(\d+) \[(W|I|E)\] (\d+) (.*)'
+    regex = '(.*)\:(?P<line>\d+)\:(?P<col>\d+) \[(?P<warning>W|I|)?(?P<error>E)?\] (?P<code>\d+) (?P<message>.*)'
     multiline = False
     defaults = {
         'selector': 'source.python'
@@ -26,4 +27,15 @@ code    | The corresponding error code given            | 0302
 
 
 /Users/rtownshend/repos/timesheet-e2e/TestCases/gherkin_login.robot:16:1 [W] 0302 Keyword name 'When User 'rtownshend' Logs In With Password 'a'' does not follow case convention (wrong-case-in-keyword-name)
+
+    # cmd = 'pyflakes'
+    # regex = r'''(?x)
+    #     ^(?P<filename>.+?):(?P<line>\d+):((?P<col>\d+):?)?\s
+    #     # The rest of the line is the error message.
+    #     # Within that, capture anything within single quotes as `near`.
+    #     (?P<message>[^\'\n\r]*(?P<near>\'.+?\')?.*)
+    # '''
+
 '''
+
+
