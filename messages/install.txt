@@ -1,4 +1,4 @@
-SublimeLinter-robocop
+SublimeLinter-contrib-robocop
 -------------------------------
 This linter plugin for SublimeLinter provides an interface to robocop.
 
