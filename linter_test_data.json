@@ -1,0 +1,5 @@
+{
+    "error": "/path/to/timesheet-e2e/TestCases/timesheet_login.robot:11:1 [E] 0313 Test case name should not be empty (test-case-name-is-empty)",
+    "warning": "/path/to/timesheet-e2e/TestCases/gherkin_login.robot:16:1 [W] 0302 Keyword name 'When User 'rtownshend' Logs In With Password 'a'' does not follow case convention (wrong-case-in-keyword-name)",
+    "info": "/path/to/login.robot:28:1 [I] 0302 Keyword name 'Input password' does not follow case convention (wrong-case-in-keyword-name)"
+}
