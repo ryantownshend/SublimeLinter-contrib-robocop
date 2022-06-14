@@ -13,7 +13,7 @@ import linter  # noqa
 
 def load_data():
     """Load the test data."""
-    with open("linter_test_data.json", "r", encoding="utf-8") as reader:
+    with open("tests/linter_test_data.json", "r", encoding="utf-8") as reader:
         return json.load(reader)
 
 
@@ -27,7 +27,10 @@ class TestLinter(unittest.TestCase):
         result = pattern.match(data["error"])
 
         # filename, line, col, warning, error, code, message
-
+        # self.assertEqual(
+        #     result.group("filename"),
+        #     "filename"
+        # )
         self.assertEqual(
             result.group("line"),
             "11"
