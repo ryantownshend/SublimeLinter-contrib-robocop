@@ -1,6 +1,15 @@
 SublimeLinter-contrib-robocop
 -------------------------------
-This linter plugin for SublimeLinter provides an interface to robocop.
+This linter plugin for SublimeLinter provides an interface to 'robocop', a 
+linter for Robot Framework. https://robotframework.org/.
 
 For more information, please see:
 https://github.com/ryantownshend/SublimeLinter-contrib-robocop
+
+Requires 'robocop' installed and on your path.
+
+https://robocop.readthedocs.io/
+
+pip install robotframework-robocop
+
+
